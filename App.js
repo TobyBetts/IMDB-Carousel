@@ -4,7 +4,7 @@ import { View } from 'react-native';
 export default function App() {
   return (
     <View>
-      <Text>Base</Text>
+      <Text>Bassfsaase</Text>
     </View>
   );
 }
