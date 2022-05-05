@@ -1,6 +1,6 @@
 import React from 'react'
 import { SafeAreaView, StyleSheet } from 'react-native'
-import CarouselCards from './CarouselCards'
+import CarouselCards from './components/CarouselCards'
 
 export default function App() {
   return (
