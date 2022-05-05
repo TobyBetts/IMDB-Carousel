@@ -1,12 +1,11 @@
 import React from 'react'
-import { SafeAreaView, StyleSheet } from 'react-native'
-import CarouselCards from './components/CarouselCards'
+import { View } from 'react-native';
 
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <CarouselCards />
-    </SafeAreaView>
+    <View>
+      <Text>Base</Text>
+    </View>
   );
 }
 
