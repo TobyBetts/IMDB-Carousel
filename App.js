@@ -8,7 +8,7 @@ import data from './data';
 export const SLIDER_WIDTH = Dimensions.get('window').width + 30;
 export const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.8);
 
-
+//
 const App = () => {
   const [index, setIndex] = useState(0);
   const isCarousel = useRef(null);
