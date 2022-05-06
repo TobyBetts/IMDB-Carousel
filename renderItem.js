@@ -11,9 +11,9 @@ const renderItem = ({item}) => {
           alignItems: 'center',
           backgroundColor: 'white',
         }}>
-        <Image source={{uri: item.url}} style={{width: 200, height: 200}} />
+        <Image source={{uri: item.image}} style={{width: 300, height: 300}} />
         <Text style={{marginVertical: 10, fontSize: 20, fontWeight: 'bold'}}>
-          {item.name}
+          {item.title}
         </Text>
       </View>
     );
