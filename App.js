@@ -1,9 +1,10 @@
 import React, {useState, useRef} from 'react';
-import {Text, View, Dimensions, Image} from 'react-native';
+import {Text, View, Dimensions, Image, StyleSheet} from 'react-native';
 import Carousel, {Pagination} from 'react-native-snap-carousel';
 
 import renderItem from './renderItem'
 import data from './data';
+import styles from './styles';
 
 export const SLIDER_WIDTH = Dimensions.get('window').width + 30;
 export const ITEM_WIDTH = Math.round(SLIDER_WIDTH * 0.8);
@@ -13,8 +14,8 @@ const App = () => {
   const [index, setIndex] = useState(0);
   const isCarousel = useRef(null);
   return (
-    <View style={{ backgroundColor: 'purple', height: 'auto', flex: 1, justifyContent: 'flex-end' }}>
-    <View style={{marginVertical: 10 }}>
+    <View style={styles.root}>
+    <View>
       <Carousel
         ref={isCarousel}
         data={data}
@@ -27,18 +28,9 @@ const App = () => {
         dotsLength={data.length}
         activeDotIndex={index}
         carouselRef={isCarousel}
-        dotStyle={{
-          width: 15,
-          height: 15,
-          borderRadius: 5,
-          marginHorizontal: 8,
-          backgroundColor: 'orange',
-        }}
+        dotStyle={styles.activeDots}
         tappableDots={true}
-        inactiveDotStyle={{
-          backgroundColor: 'black',
-          // Define styles for inactive dots here
-        }}
+        inactiveDotStyle={styles.inactiveDots}
         inactiveDotOpacity={0.4}
         inactiveDotScale={0.6}
       />
@@ -48,3 +40,4 @@ const App = () => {
 };
 
 export default App;
+
