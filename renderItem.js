@@ -4,10 +4,9 @@ import styles from "./styles";
 
 const renderItem = ({item}) => {
     return (
-      <View
-        style={styles.tile}>
-        <Image source={{uri: item.image}} style={{width: 300, height: 300}} />
-        <Text style={{marginVertical: 10, fontSize: 20, fontWeight: 'bold'}}>
+      <View style={styles.tile}>
+        <Image source={{uri: item.image}} style={styles.image} />
+        <Text style={styles.title}>
           {item.title}
         </Text>
       </View>
