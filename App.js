@@ -1,21 +1,20 @@
 import React from 'react';
-import { SafeAreaView, FlatList} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
-import renderItem from './renderItem'
-import data from './data';
-import styles from './styles';
-
+import FlatListScreen from './FlatListScreen';
+import MovieScreen from './MovieScreen';
+const Stack = createNativeStackNavigator(); 
 
 const App = () => {
   return (
-    <SafeAreaView style={styles.root}>
-      <FlatList
-        horizontal={true}
-        data={data}
-        renderItem={renderItem}
-      />
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="FlatList">
+        <Stack.Screen name="FlatList" component={FlatListScreen} />
+        <Stack.Screen name="Movie" component={MovieScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+
   )
 }
 

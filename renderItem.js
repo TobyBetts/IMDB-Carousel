@@ -1,15 +1,18 @@
 import React from "react";
-import { View, Image, Text } from 'react-native'
+import { View, Image, Text, Pressable } from 'react-native'
+
 import styles from "./styles";
 
-const renderItem = ({item}) => {
+const renderItem = ({item, navigation }) => {
     return (
-      <View style={styles.tile}>
-        <Image source={{uri: item.image}} style={styles.image} />
-        <Text style={styles.title}>
-          {item.title}
-        </Text>
-      </View>
+      <Pressable onPress={() => navigation.navigate('Movie', {title: item.title, image: item.image} )}>
+        <View style={styles.tile}>
+          <Image source={{uri: item.image}} style={styles.image} />
+          <Text style={styles.title}>
+            {item.title}
+          </Text>
+        </View>
+      </Pressable> 
     );
   };
 
