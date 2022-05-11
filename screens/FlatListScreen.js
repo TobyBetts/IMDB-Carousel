@@ -18,6 +18,8 @@ const FlatListScreen = ({ navigation }) => {
                 navigation.navigate("Movie", {
                   title: item.title,
                   image: item.image,
+                  fullTitle: item.fullTitle,
+                  imdbRating: item.imDbRating
                 });
               }}
             >

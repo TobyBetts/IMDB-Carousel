@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
   root: {
     flex: 1,
     justifyContent: "center",
+    alignItems: 'center'
   },
 
   carousel: {
@@ -32,6 +33,16 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "black",
   },
+
+  movieScreenImage: {
+    height: 100, 
+    width: 100, 
+    alignItems: 'center'
+  },
+
+  fullTitle: {
+    fontWeight: 'bold'
+  }
 });
 
 export default styles;

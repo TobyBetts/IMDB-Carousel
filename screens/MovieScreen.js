@@ -3,10 +3,12 @@ import { SafeAreaView, Image, Text } from "react-native";
 import styles from "../styles";
 
 const MovieScreen = ({ route }) => {
-  const { image } = route.params;
+  const { image, fullTitle, imdbRating } = route.params;
   return (
     <SafeAreaView style={styles.root}>
-      <Image source={{ uri: image }} style={{ height: 100, width: 100 }} />
+      <Image source={{ uri: image }} style={styles.movieScreenImage} />
+      <Text style={styles.fullTitle}>{fullTitle}</Text>
+      <Text style={styles.imdbRating}>IMDB Rating: {imdbRating}</Text>
     </SafeAreaView>
   );
 };
