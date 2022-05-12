@@ -26,5 +26,5 @@ const RatingTile = ({ item }) => {
 );
 };
 
-export default Tile;
+export default Tile
 export { RatingTile }
