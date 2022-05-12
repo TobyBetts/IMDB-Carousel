@@ -19,7 +19,8 @@ const FlatListScreen = ({ navigation }) => {
                   title: item.title,
                   image: item.image,
                   fullTitle: item.fullTitle,
-                  imdbRating: item.imDbRating
+                  imdbRating: item.imDbRating,
+                  imDbRatingCount: item.imDbRatingCount
                 });
               }}
             >

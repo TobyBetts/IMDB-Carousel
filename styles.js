@@ -34,15 +34,33 @@ const styles = StyleSheet.create({
     color: "black",
   },
 
+  movieScreenRoot: {
+    flex: 1,
+    justifyContent: "flex-start",
+    alignItems: 'center',
+  },
+
+  movieScreenInfo: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+
   movieScreenImage: {
-    height: 100, 
-    width: 100, 
+    height: 300, 
+    width: 200, 
     alignItems: 'center'
   },
 
   fullTitle: {
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    fontSize: 20
+  },
+
+  imdbRating: {
+
   }
+
 });
 
 export default styles;
