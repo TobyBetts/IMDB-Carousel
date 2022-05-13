@@ -8,15 +8,15 @@ const styles = StyleSheet.create({
   },
 
   carousel: {
-    height: 380,
+    height: 350,
     marginHorizontal: 5,
   },
 
-  top250MoviesHeader: {
+  carouselHeaders: {
     alignItems: 'center',
     fontSize: 23,
     fontWeight: 'bold',
-    margin: 20
+    margin: 15
   },
 
   tile: {
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
 
   title: {
     marginVertical: 5,
-    fontSize: 20,
+    fontSize: 16,
     fontWeight: "bold",
     color: "black",
   },

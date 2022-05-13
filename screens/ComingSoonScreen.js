@@ -2,14 +2,14 @@ import React from "react";
 import { SafeAreaView } from "react-native";
 
 import styles from "../styles";
-import { RatingTile } from "../components/Tile";
+import { ComingSoonTile } from "../components/Tile";
 
-const MovieScreen = ({ route }) => {
+const ComingSoonScreen = ({ route }) => {
   return (
     <SafeAreaView style={styles.movieScreenRoot}>
-      <RatingTile item={route.params} />
+      <ComingSoonTile item={route.params} />
     </SafeAreaView>
   );
 };
 
-export default MovieScreen;
+export default ComingSoonScreen;
