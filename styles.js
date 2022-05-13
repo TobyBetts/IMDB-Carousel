@@ -42,8 +42,15 @@ const styles = StyleSheet.create({
 
   movieScreenInfo: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center'
+  },
+
+  movieScreenImageView: {
+    backgroundColor: '#1c1c1c',
+    height: 300,
+    width: 500,
+    alignItems: 'center',
   },
 
   movieScreenImage: {
@@ -54,11 +61,13 @@ const styles = StyleSheet.create({
 
   fullTitle: {
     fontWeight: 'bold',
-    fontSize: 20
+    fontSize: 23,
+    margin: 7
   },
 
   imdbRating: {
-
+    fontSize: 18,
+    fontStyle: 'italic'
   }
 
 });
