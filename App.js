@@ -12,7 +12,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="FlatList">
-        <Stack.Screen name="FlatList" component={FlatListScreen} options={{ title: 'Top Movies' }}  />
+        <Stack.Screen name="FlatList" component={FlatListScreen} options={{ title: 'Home' }}  />
         <Stack.Screen name="Movie" component={MovieScreen} options={({ route }) => ({ title: route.params.title })}/>
       </Stack.Navigator>
     </NavigationContainer>

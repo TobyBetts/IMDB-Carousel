@@ -3,13 +3,20 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: "flex-start",
     alignItems: 'center',
   },
 
   carousel: {
-    height: 350,
+    height: 380,
     marginHorizontal: 5,
+  },
+
+  top250MoviesHeader: {
+    alignItems: 'center',
+    fontSize: 23,
+    fontWeight: 'bold',
+    margin: 20
   },
 
   tile: {
@@ -17,7 +24,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "white",
     marginHorizontal: 5,
-    justifyContent: "center",
+    justifyContent: "flex-start",
     width: 220,
   },
 
@@ -28,7 +35,7 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    marginVertical: 10,
+    marginVertical: 5,
     fontSize: 20,
     fontWeight: "bold",
     color: "black",
@@ -62,7 +69,7 @@ const styles = StyleSheet.create({
   fullTitle: {
     fontWeight: 'bold',
     fontSize: 23,
-    margin: 7
+    margin: 7,
   },
 
   imdbRating: {
