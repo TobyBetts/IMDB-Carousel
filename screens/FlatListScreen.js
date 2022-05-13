@@ -1,10 +1,10 @@
 import React from "react";
 import { SafeAreaView, FlatList, Pressable, View, Text } from "react-native";
 
-import top250Data from "../top250Data";
-import comingSoonData from "../comingSoonData";
+import top250Data from "../data/top250Data";
+import comingSoonData from "../data/comingSoonData";
 import styles from "../styles";
-import Tile from "../components/Tile";
+import FlatListTile from "../components/FlatListTile";
 
 const FlatListScreen = ({ navigation }) => {
   return (
@@ -26,7 +26,7 @@ const FlatListScreen = ({ navigation }) => {
                 });
               }}
             >
-              <Tile item={item} />
+              <FlatListTile item={item} />
             </Pressable>
           )}
         />
@@ -51,7 +51,7 @@ const FlatListScreen = ({ navigation }) => {
                 });
               }}
             >
-              <Tile item={item} />
+              <FlatListTile item={item} />
             </Pressable>
           )}
         />
