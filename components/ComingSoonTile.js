@@ -1,6 +1,8 @@
 import React from "react";
 import { View, Image, Text } from "react-native";
 
+import styles from "../styles";
+
 const ComingSoonTile = ({ item }) => {
     const { image, fullTitle, plot, releaseState, genres } = item;
     return (

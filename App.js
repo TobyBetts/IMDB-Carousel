@@ -15,7 +15,7 @@ const App = () => {
       <Stack.Navigator initialRouteName="FlatList">
         <Stack.Screen name="FlatList" component={FlatListScreen} options={{ title: 'Home' }}  />
         <Stack.Screen name="Movie" component={MovieScreen} options={({ route }) => ({ title: route.params.title })}/>
-        <Stack.Screen name="ComingScreen" component={ComingSoonScreen} options={({ route }) => ({ title: route.params.title })}/>
+        <Stack.Screen name="ComingSoonScreen" component={ComingSoonScreen} options={({ route }) => ({ title: route.params.title })}/>
       </Stack.Navigator>
     </NavigationContainer>
 

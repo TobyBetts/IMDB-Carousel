@@ -1,6 +1,8 @@
 import React from "react";
 import { View, Image, Text } from "react-native";
 
+import styles from "../styles";
+
 const MovieTile = ({ item }) => {
     const { image, fullTitle, imdbRating, imDbRatingCount } = item;
     return (

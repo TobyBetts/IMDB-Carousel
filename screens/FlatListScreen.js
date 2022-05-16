@@ -41,7 +41,7 @@ const FlatListScreen = ({ navigation }) => {
           renderItem={({ item }) => (
             <Pressable
               onPress={() => {
-                navigation.navigate("ComingSoon", {
+                navigation.navigate("ComingSoonScreen", {
                   title: item.title,
                   image: item.image,
                   fullTitle: item.fullTitle,
