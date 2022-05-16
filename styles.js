@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   movieScreenImageView: {
     backgroundColor: '#1c1c1c',
     height: 300,
-    width: 500,
+    width: 428,
     alignItems: 'center',
   },
 
