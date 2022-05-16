@@ -3,8 +3,8 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: 'center'
+    justifyContent: "flex-start",
+    alignItems: 'center',
   },
 
   carousel: {
@@ -12,12 +12,19 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
   },
 
+  carouselHeaders: {
+    alignItems: 'center',
+    fontSize: 23,
+    fontWeight: 'bold',
+    margin: 15
+  },
+
   tile: {
     flex: 1,
     alignItems: "center",
     backgroundColor: "white",
     marginHorizontal: 5,
-    justifyContent: "center",
+    justifyContent: "flex-start",
     width: 220,
   },
 
@@ -28,8 +35,8 @@ const styles = StyleSheet.create({
   },
 
   title: {
-    marginVertical: 10,
-    fontSize: 20,
+    marginVertical: 5,
+    fontSize: 16,
     fontWeight: "bold",
     color: "black",
   },
@@ -42,8 +49,15 @@ const styles = StyleSheet.create({
 
   movieScreenInfo: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center'
+  },
+
+  movieScreenImageView: {
+    backgroundColor: '#1c1c1c',
+    height: 300,
+    width: 428,
+    alignItems: 'center',
   },
 
   movieScreenImage: {
@@ -54,11 +68,13 @@ const styles = StyleSheet.create({
 
   fullTitle: {
     fontWeight: 'bold',
-    fontSize: 20
+    fontSize: 23,
+    margin: 7,
   },
 
   imdbRating: {
-
+    fontSize: 18,
+    fontStyle: 'italic'
   }
 
 });

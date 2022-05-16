@@ -1,4 +1,4 @@
-const data = [
+const top250Data = [
     {
        "id":"tt0111161",
        "rank":"1",
@@ -2998,4 +2998,4 @@ const data = [
     },
   ];
   
- export default data;
+ export default top250Data;
