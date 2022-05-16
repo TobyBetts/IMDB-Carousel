@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { SafeAreaView, FlatList, Pressable, View, Text } from "react-native";
 
-import top250Data from "../data/top250Data";
-import comingSoonData from "../data/comingSoonData";
 import styles from "../styles";
 import FlatListTile from "../components/FlatListTile";
 
