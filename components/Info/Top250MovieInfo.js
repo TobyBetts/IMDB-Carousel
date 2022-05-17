@@ -1,9 +1,9 @@
 import React from "react";
 import { View, Image, Text } from "react-native";
 
-import styles from "../styles";
+import styles from "./infoStyles";
 
-const MovieTile = ({ item }) => {
+const Top250MovieInfo = ({ item }) => {
     const { image, fullTitle, imdbRating, imDbRatingCount } = item;
     return (
       <View style={styles.movieScreenInfo}>
@@ -18,4 +18,4 @@ const MovieTile = ({ item }) => {
     );
   };
 
-  export default MovieTile
+  export default Top250MovieInfo

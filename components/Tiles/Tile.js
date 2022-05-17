@@ -1,9 +1,9 @@
 import React from "react";
 import { View, Image, Text } from "react-native";
 
-import styles from "../styles";
+import styles from "./TileStyles";
 
-const FlatListTile = ({ item }) => {
+const Tile = ({ item }) => {
   return (
     <View style={styles.tile}>
       <Image style={styles.image} source={{ uri: item.image }} />
@@ -12,5 +12,5 @@ const FlatListTile = ({ item }) => {
   );
 };
 
-export default FlatListTile;
+export default Tile;
 
