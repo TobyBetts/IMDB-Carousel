@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     margin: 7,
   },
 
-  releaseState: {
+  releaseDate: {
     fontStyle: 'italic'
   },
 

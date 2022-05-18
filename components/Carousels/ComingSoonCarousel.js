@@ -4,7 +4,7 @@ import { Text, View, FlatList, Pressable } from "react-native";
 import Tile from "../Tiles/Tile";
 import styles from "./carouselStyles";
 
-const ComingSoonCarousel = () => {
+const ComingSoonCarousel = ({ navigation }) => {
   const [comingSoonMovieData, setComingSoonMovieData] = useState([]);
 
   useEffect(() => {
@@ -34,11 +34,7 @@ const ComingSoonCarousel = () => {
               onPress={() => {
                 navigation.navigate("ComingSoonScreen", {
                   title: item.title,
-                  image: item.image,
-                  fullTitle: item.fullTitle,
-                  plot: item.plot,
-                  releaseState: item.releaseState,
-                  genres: item.genres,
+                  id: item.id
                 });
               }}
             >
