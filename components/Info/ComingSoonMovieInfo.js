@@ -1,9 +1,9 @@
 import React from "react";
 import { View, Image, Text } from "react-native";
 
-import styles from "../styles";
+import styles from './infoStyles'
 
-const ComingSoonTile = ({ item }) => {
+const ComingSoonMovieInfo = ({ item }) => {
     const { image, fullTitle, plot, releaseState, genres } = item;
     return (
       <View style={styles.movieScreenInfo}>
@@ -11,11 +11,11 @@ const ComingSoonTile = ({ item }) => {
           <Image source={{ uri: image }} style={styles.movieScreenImage} />
         </View>
         <Text style={styles.fullTitle}>{fullTitle}</Text>
-        <Text>{releaseState}</Text>
+        <Text style={styles.releaseState}>{releaseState}</Text>
         <Text style={styles.imdbRating}>Genre: {genres}</Text>
         <Text>{plot}</Text>
       </View>
     );
   };
 
-  export default ComingSoonTile
+  export default ComingSoonMovieInfo
