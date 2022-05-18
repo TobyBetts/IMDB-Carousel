@@ -36,10 +36,7 @@ const Top250Carousel = ({ navigation }) => {
               onPress={() => {
                 navigation.navigate("Movie", {
                   title: item.title,
-                  image: item.image,
-                  fullTitle: item.fullTitle,
-                  imdbRating: item.imDbRating,
-                  imDbRatingCount: item.imDbRatingCount,
+                  id: item.id
                 });
               }}
             >

@@ -10,7 +10,7 @@ const HomeScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.root}>
       <Top250Carousel navigation={navigation}/>
-      <ComingSoonCarousel />
+      <ComingSoonCarousel navigation={navigation}/>
     </SafeAreaView>
   );
 };
