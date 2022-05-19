@@ -3,13 +3,13 @@ import { SafeAreaView } from "react-native";
 
 import styles from "./ScreenStyles";
 import Top250MovieInfo from '../components/Info/Top250MovieInfo'
-import StarsCarousel from "../components/Carousels/StarsCarousel";
+import CastCarousel from "../components/Carousels/CastCarousel";
 
 const MovieScreen = ({ route }) => {
   return (
     <SafeAreaView style={styles.movieScreenRoot}>
       <Top250MovieInfo item={route.params} />
-      <StarsCarousel /> 
+      <CastCarousel item={route.params}/> 
     </SafeAreaView>
   );
 };

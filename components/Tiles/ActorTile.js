@@ -7,7 +7,7 @@ const ActorTile = ({ item }) => {
   return (
     <View style={styles.actorTile}>
       <Image style={styles.actorImage} source={{ uri: item.image }} />
-      <Text style={styles.actorName}>{item.title}</Text>
+      <Text style={styles.actorName}>{item.name}</Text>
     </View>
   );
 };
