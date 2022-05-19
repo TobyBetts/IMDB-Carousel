@@ -3,13 +3,13 @@ import { SafeAreaView } from "react-native";
 
 import styles from "./ScreenStyles";
 import ComingSoonMovieInfo from "../components/Info/ComingSoonMovieInfo";
-import StarsCarousel from "../components/Carousels/StarsCarousel";
+import StarsCarousel from "../components/Carousels/CastCarousel";
 
 const ComingSoonScreen = ({ route }) => {
   return (
     <SafeAreaView style={styles.movieScreenRoot}>
       <ComingSoonMovieInfo item={route.params} />
-      <StarsCarousel />
+      <StarsCarousel item={route.params} />
     </SafeAreaView>
   );
 };
