@@ -11,7 +11,7 @@ const CastCarousel = ({item}) => {
     const [ movieDetails, setMovieDetails ] = useState([])
   
     useEffect(() => {
-      getMovieDetails( setMovieDetails )
+      getMovieDetails( setMovieDetails, id )
     }, [])
 
   return (

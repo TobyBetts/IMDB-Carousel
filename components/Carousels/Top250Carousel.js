@@ -6,11 +6,10 @@ import getTopMovies from '../../APIs/getTopMovies'
 import styles from "./carouselStyles";
 
 const Top250Carousel = ({ navigation }) => {
-    const { id } = item
     const [ top250MovieData, setTop250MovieData ] = useState([])
     
     useEffect(() => {
-     getTopMovies( setTop250MovieData, id )
+     getTopMovies( setTop250MovieData )
     }, [])
 
     return (

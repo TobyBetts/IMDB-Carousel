@@ -9,7 +9,7 @@ const ComingSoonMovieInfo = ({ item }) => {
     const [ movieDetails, setMovieDetails ] = useState([])
   
     useEffect(() => {
-      getMovieDetails( setMovieDetails )
+      getMovieDetails( setMovieDetails, id )
     }, [])
     return (
       <View style={styles.movieScreenInfo}>

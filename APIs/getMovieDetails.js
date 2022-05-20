@@ -1,4 +1,4 @@
-const getMovieDetails = (data, id) => {
+const getMovieDetails = (data, id ) => {
   const xhr = new XMLHttpRequest();
   xhr.open("GET", `https://imdb-api.com/en/API/Title/k_hb5v8ahs/${id}`);
   xhr.send();
