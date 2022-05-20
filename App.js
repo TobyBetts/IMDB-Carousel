@@ -7,6 +7,7 @@ import MovieScreen from './screens/MovieScreen';
 import ComingSoonScreen from './screens/ComingSoonScreen'
 
 
+
 const Stack = createNativeStackNavigator(); 
 
 const App = () => {
@@ -14,7 +15,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Movie" component={MovieScreen} options={({ route }) => ({ title: route.params.title })}/>
+        <Stack.Screen name="MovieScreen" component={MovieScreen} options={({ route }) => ({ title: route.params.title })}/>
         <Stack.Screen name="ComingSoonScreen" component={ComingSoonScreen} options={({ route }) => ({ title: route.params.title })}/>
       </Stack.Navigator>
     </NavigationContainer>
