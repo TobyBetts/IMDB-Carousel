@@ -7,6 +7,7 @@ import MovieScreen from './screens/MovieScreen';
 import ComingSoonScreen from './screens/ComingSoonScreen'
 
 
+
 const Stack = createNativeStackNavigator(); 
 
 const App = () => {

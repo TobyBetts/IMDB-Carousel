@@ -2,25 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Text, View, FlatList, Pressable } from "react-native";
 
 import Tile from "../Tiles/Tile";
+import getTopMovies from '../../APIs/getTopMovies'
 import styles from "./carouselStyles";
 
 const Top250Carousel = ({ navigation }) => {
-
+    const { id } = item
     const [ top250MovieData, setTop250MovieData ] = useState([])
-  
-    useEffect(() => {
-        const xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://imdb-api.com/en/API/Top250Movies/k_a457c7lp");
-        xhr.send();
-        xhr.onload = () => {
-          if (xhr.status == 200) {
-            let response = JSON.parse(xhr.response)
-            setTop250MovieData(response)
     
-          }else{
-            console.log(`HTTP Request Failed ${xhr.status}`)
-          }
-        };
+    useEffect(() => {
+     getTopMovies( setTop250MovieData, id )
     }, [])
 
     return (
@@ -34,7 +24,7 @@ const Top250Carousel = ({ navigation }) => {
           renderItem={({ item }) => (
             <Pressable
               onPress={() => {
-                navigation.navigate("Movie", {
+                navigation.navigate("MovieScreen", {
                   title: item.title,
                   id: item.id
                 });

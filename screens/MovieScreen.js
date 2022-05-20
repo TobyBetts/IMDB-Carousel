@@ -7,6 +7,7 @@ import CastCarousel from "../components/Carousels/CastCarousel";
 
 const MovieScreen = ({ route }) => {
   return (
+    
     <SafeAreaView style={styles.movieScreenRoot}>
       <Top250MovieInfo item={route.params} />
       <CastCarousel item={route.params}/> 
