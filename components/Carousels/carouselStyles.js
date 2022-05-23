@@ -10,8 +10,7 @@ const styles = StyleSheet.create({
   },
 
   carousel: {
-    height: 350,
-    marginHorizontal: 5,
+    flex: 1
   },
 
   castCarousel: {
