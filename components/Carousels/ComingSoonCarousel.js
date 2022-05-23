@@ -23,7 +23,7 @@ const ComingSoonCarousel = ({ navigation }) => {
           renderItem={({ item }) => (
             <Pressable
               onPress={() => {
-                navigation.navigate("ComingSoonScreen", {
+                navigation.navigate("MovieScreen", {
                   title: item.title,
                   id: item.id
                 });

@@ -44,6 +44,10 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "black",
   },
+
+  characterName: {
+    fontSize: 14,
+  }
 });
 
 export default styles;

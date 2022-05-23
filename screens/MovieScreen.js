@@ -1,17 +1,18 @@
 import React from "react";
-import { SafeAreaView } from "react-native";
+import { SafeAreaView, ScrollView } from "react-native";
 
 import styles from "./ScreenStyles";
-import Top250MovieInfo from '../components/Info/Top250MovieInfo'
+import MovieDetails from "../components/Info/MovieDetails";
 import CastCarousel from "../components/Carousels/CastCarousel";
 
 const MovieScreen = ({ route }) => {
   return (
-    
-    <SafeAreaView style={styles.movieScreenRoot}>
-      <Top250MovieInfo item={route.params} />
-      <CastCarousel item={route.params}/> 
-    </SafeAreaView>
+    <ScrollView>
+      <SafeAreaView style={styles.movieScreenRoot}>
+        <MovieDetails item={route.params} />
+        <CastCarousel item={route.params} />
+      </SafeAreaView>
+    </ScrollView>
   );
 };
 

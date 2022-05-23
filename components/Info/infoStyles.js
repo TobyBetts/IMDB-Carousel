@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  movieScreenInfo: {
+  movieDetailsRoot: {
     flex: 1,
     justifyContent: "flex-start",
     alignItems: "center",
@@ -23,17 +23,23 @@ const styles = StyleSheet.create({
   fullTitle: {
     fontWeight: "bold",
     fontSize: 23,
-    margin: 7,
-  },
-
-  releaseDate: {
-    fontStyle: 'italic'
+    margin: 10,
   },
 
   imdbRating: {
-    fontSize: 18,
+    fontSize: 16,
     fontStyle: "italic",
   },
+
+  genres: {
+    fontSize: 16,
+    fontStyle: 'italic'
+  },
+
+  plot: {
+    marginHorizontal: 10,
+    marginTop: 10
+  }
 });
 
 export default styles;

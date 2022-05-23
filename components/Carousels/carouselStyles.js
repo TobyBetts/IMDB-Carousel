@@ -3,6 +3,7 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   carouselHeaders: {
     alignItems: "center",
+    justifyContent: 'center',
     fontSize: 23,
     fontWeight: "bold",
     margin: 15,
@@ -14,7 +15,7 @@ const styles = StyleSheet.create({
   },
 
   castCarousel: {
-    height: 250,
+    height: 270,
     marginHorizontal: 5,
   },
 });

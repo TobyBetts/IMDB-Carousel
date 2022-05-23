@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { View, Image, Text } from "react-native";
-import getMovieDetails from "../../APIs/getMovieDetails";
 
+
+import getMovieDetails from "../../APIs/getMovieDetails";
 import styles from "./infoStyles";
 
-const Top250MovieInfo = ({ item }) => {
+const MovieDetails = ({ item }) => {
     const { id } = item;
     const [ movieDetails, setMovieDetails ] = useState([])
   
@@ -12,7 +13,7 @@ const Top250MovieInfo = ({ item }) => {
       getMovieDetails( setMovieDetails, id)
     }, [])
     return (
-      <View style={styles.movieScreenInfo}>
+      <View style={styles.movieDetailsRoot}>
         <View style={styles.movieScreenImageView}>
           <Image source={{ uri: movieDetails.image }} style={styles.movieScreenImage} />
         </View>
@@ -20,10 +21,10 @@ const Top250MovieInfo = ({ item }) => {
         <Text style={styles.imdbRating}>
           IMDB Rating: {movieDetails.imDbRating} ({movieDetails.imDbRatingVotes} reviews)
         </Text>
-        <Text style={styles.imdbRating}>{movieDetails.genres}</Text>
-        <Text>{movieDetails.plot}</Text>
+        <Text style={styles.genres}>{movieDetails.genres}</Text>
+        <Text style={styles.plot}>{movieDetails.plot}</Text>
       </View>
     );
   };
 
-  export default Top250MovieInfo
+  export default MovieDetails

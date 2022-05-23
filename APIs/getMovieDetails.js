@@ -13,3 +13,4 @@ const getMovieDetails = (data, id ) => {
 };
 
 export default getMovieDetails;
+
