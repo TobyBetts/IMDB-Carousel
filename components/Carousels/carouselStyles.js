@@ -4,13 +4,14 @@ const styles = StyleSheet.create({
   carouselHeaders: {
     alignItems: "center",
     justifyContent: 'center',
-    fontSize: 23,
-    fontWeight: "bold",
+    fontSize: 25,
+    fontWeight: "700",
     margin: 15,
+    color: 'black'
   },
 
   carousel: {
-    flex: 1
+    flex: 1,
   },
 
   castCarousel: {

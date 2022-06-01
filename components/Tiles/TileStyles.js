@@ -5,22 +5,25 @@ const styles = StyleSheet.create({
   tile: {
     flex: 1,
     alignItems: "center",
-    backgroundColor: "white",
-    marginHorizontal: 5,
+    backgroundColor: 'white',
+    marginHorizontal: 7,
     justifyContent: "flex-start",
-    width: 220,
+    width: 200,
+    borderRadius: 12,
   },
 
   image: {
-    width: 300,
-    height: 300,
+    width: 200,
+    height: 274,
     resizeMode: "contain",
+    borderTopLeftRadius: 12,
+    borderTopRightRadius: 12
   },
 
   title: {
-    marginVertical: 5,
+    marginVertical: 7,
     fontSize: 16,
-    fontWeight: "bold",
+    fontWeight: '700',
     color: "black",
   },
 
@@ -41,12 +44,13 @@ const styles = StyleSheet.create({
   actorName: {
     marginVertical: 5,
     fontSize: 16,
-    fontWeight: "bold",
+    fontWeight: "600",
     color: "black",
   },
 
   characterName: {
     fontSize: 14,
+    fontStyle: 'italic'
   }
 });
 

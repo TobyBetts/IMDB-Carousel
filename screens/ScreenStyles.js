@@ -4,7 +4,8 @@ const styles = StyleSheet.create({
   root: {
     flex: 1,
     justifyContent: "flex-start",
-    alignItems: "center",
+    alignItems: "center", 
+
   },
 
   movieScreenRoot: {
